@@ -16,8 +16,8 @@ interface Slide {
   styleUrl: './solutions.component.css'
 })
 export class SolutionsComponent {
-  
- 
+
+
   slides: Slide[] = [
     {
       h1: 'Defence and Intelligence',
@@ -57,7 +57,7 @@ export class SolutionsComponent {
     this.currentSlideIndex = index;
   }
 
-   x = ["Defence and Intelligence", "Media and Information", "Researchers", "Humanitarians", "Others"];
+   x = ["Defence and Intelligence", "Media", "Researchers", "Humanitarians", "Others"];
 }
 
 
