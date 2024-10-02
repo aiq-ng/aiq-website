@@ -1,6 +1,9 @@
-# AiqWebsite
+# aiq-website
+Repository for AIQ Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+It took me about 10 minutes to come up with the name for this repo
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
 ## Development server
 
@@ -24,4 +27,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
