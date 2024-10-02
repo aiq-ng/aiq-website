@@ -27,12 +27,12 @@ export class SolutionsComponent {
     },
     {
       h1: 'Researchers',
-      p: 'Leverage AI to analyze large datasets and uncover new insights.',
+      p: ' Leverage AI to analyze large datasets and uncover new insights.',
       img: 'assets/image 32.jpg',
       svg: 'assets/Research.svg'
     },
     {
-      h1: 'Humanitarian Organizations',
+      h1: 'Humanitarian',
       p: 'Improve disaster response and resource allocation with real-time data insights.',
       img: 'assets/image 31.jpg',
       svg: 'assets/Give Money.svg'
