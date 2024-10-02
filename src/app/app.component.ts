@@ -1,21 +1,39 @@
-import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-
+import { HttpClient } from '@angular/common/http';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+  ViewChildren,
+  ViewEncapsulation,
+} from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
-  title = 'aiq-website';
 
-  constructor(private router: Router) {}
-  navigateTo(route: string): void {
-    this.router.navigate([route]);
+export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChildren('globeViz, content') componentRefs: any;
+  @ViewChild('globeViz', { static: false })
+  globeVizEl!: ElementRef;
+  dataRequest: any;
+  world: any;
+  title = 'front';
+  place = true;
+
+  constructor(   
+    private router: Router
+  ) {}
+
+  ngOnInit(): void {
+  }
+ 
+
+  ngAfterViewInit(): void {
   }
 }
