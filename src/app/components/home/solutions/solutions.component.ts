@@ -26,12 +26,6 @@ export class SolutionsComponent {
       svg: 'assets/Security.svg'
     },
     {
-      h1: 'Media and Information',
-      p: 'Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
-      img: 'assets/image 30.jpg',
-      svg: 'assets/megaphone.svg'
-    },
-    {
       h1: 'Researchers',
       p: ' Leverage AI to analyze large datasets and uncover new insights.',
       img: 'assets/image 32.jpg',
@@ -44,8 +38,14 @@ export class SolutionsComponent {
       svg: 'assets/Give Money.svg'
     },
     {
-      h1: 'Others',
-      p: ' Our suites of products are also used by Law Enforcement Agencies, Hospitals, and Public and Private Offices.',
+      h1: 'Media and Information',
+      p: ' Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
+      img: 'assets/image 30.jpg',
+      svg: 'assets/megaphone.svg'
+    },
+    {
+      h1: 'Other Businesses',
+      p: ' Our suites of products are also used by Public and Private Businesses, Law Enforcement Agencies, Hospitals, and the General Public.',
       img: 'assets/image 52.jpg',
       svg: 'assets/categories.svg'
     }
@@ -57,7 +57,7 @@ export class SolutionsComponent {
     this.currentSlideIndex = index;
   }
 
-   x = ["Defence and Intelligence", "Media", "Researchers", "Humanitarians", "Others"];
+   x = ["Defence and Intelligence", "Researchers", "Humanitarians", "Media", "Others"];
 }
 
 
