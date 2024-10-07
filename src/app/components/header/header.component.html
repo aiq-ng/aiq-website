@@ -1,9 +1,10 @@
 <section class="fixed w-full z-40 border-b border-[rgb(228,231,236)] bg-[#ffffff]">
   <nav class="py-2 lg:py-4 px-4 container mx-auto">
     <div class="hidden lg:flex justify-between items-center">
-      <div class="">
+      <div class=""  (click)="route('/home', '')" >
         <svg
           width="97"
+          style="cursor: pointer;"
           height="46"
           viewBox="0 0 97 46"
           fill="none"
@@ -104,9 +105,10 @@
         alt=""
         width="95px"
         height="40px"
+        style="cursor: pointer;"
       />
       <div (click)="onShowList()">
-        <img src="/assets/line-dot.svg" alt="i" width="20" height="20" />
+        <img src="/assets/line-dot.svg" class="cursor-pointer" alt="i" width="20" height="20" />
       </div>
       <div *ngIf="showList" class="fixed w-full top-[65px] right-0 z-40">
         <div
@@ -127,7 +129,7 @@
             
             <div class="font-inter flex justify-center my-5">
               <a
-                ><button
+                ><button (click)="route('contact-us', '')"
                   class="bg-blue-950 py-3 px-6 font-medium rounded-md text-white hover:bg-slate-300 hover:text-blue-800"
                 >
                   Get in Touch

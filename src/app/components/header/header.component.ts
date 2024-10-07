@@ -33,4 +33,10 @@ export class HeaderComponent {
   closeShowList = () => {
     this.showList = false;
   };
+
+
+
+  route(page:string, fragment:string){
+    this.router.navigate([page], {fragment: fragment});
+  }
 }

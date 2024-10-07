@@ -13,7 +13,7 @@
     class="max-w-[1000px] font-inter px-5 mx-auto my-2"
     *ngFor="let faqItem of faq; let i = index"
   >
-    <div class="flex justify-between items-center my-3" (click)="toggleAccordion(i)">
+    <div class="flex justify-between items-center my-3 cursor-pointer" (click)="toggleAccordion(i)">
       <h1 class="text-base md:text-lg ">{{ faqItem.question }}</h1>
       <svg
         xmlns="http://www.w3.org/2000/svg"
