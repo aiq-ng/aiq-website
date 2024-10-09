@@ -45,7 +45,7 @@ export class ContactUsComponent implements OnInit {
   //     });
   //   `;
 
-  //   console.log(script)
+
 
   //   this._renderer2.appendChild(this._document.getElementById('contact-us'), script);
   }

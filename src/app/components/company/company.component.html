@@ -14,7 +14,7 @@
     </div>
 
     <div class="image basis-1/2 w-full flex md:flex-col min-h-40 lg:flex justify-center items-center">
-      <img src="assets/earth-map.png" class="object-fill w-[300px] lg:w-auto lg:h-auto" alt="">
+      <img src="assets/earth-map.png" class="object-fill w-[300px] lg:w-auto lg:h-auto"  width="auto" height="auto" alt="">
     </div>
   </div>
 </div>
@@ -150,12 +150,12 @@
       </div>
 
       <!-- Previous Button -->
-      <button (click)="prevSlide()" class="absolute animate-pulse left-0 top-1/2 h-10 w-10 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900">
+      <button (click)="prevSlide()" title="Previous content" class="absolute animate-pulse left-0 top-1/2 h-10 w-10 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900">
         &#8592;
       </button>
 
       <!-- Next Button -->
-      <button (click)="nextSlide()" class="absolute animate-pulse right-0 top-1/2 h-10 w-10 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900">
+      <button (click)="nextSlide()" title="Next content" class="absolute animate-pulse right-0 top-1/2 h-10 w-10 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900">
         &#8594;
       </button>
     </div>
@@ -231,7 +231,7 @@
       <div class="">
 
         <div class="mx-auto my-6 flex justify-center">
-          <button (click)="route('contact-us')"
+          <button title="Contact Us" (click)="route('contact-us')"
             type="submit"
             width="100"
             class="px-12 py-4 bg-[#171752] text-white font-semibold w-60 rounded-md"
@@ -243,3 +243,5 @@
     </div>
   </div>
 </section>
+
+<app-footer></app-footer>

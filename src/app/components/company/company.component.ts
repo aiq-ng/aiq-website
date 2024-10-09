@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { NewsUpdatesComponent } from '../home/news-updates/news-updates.component';
 import { ReviewsComponent } from '../home/reviews/reviews.component';
 import { Router } from '@angular/router';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-company',
   standalone: true,
-  imports: [CommonModule, NewsUpdatesComponent, ReviewsComponent],
+  imports: [CommonModule, NewsUpdatesComponent, ReviewsComponent, FooterComponent],
   templateUrl: './company.component.html',
   styleUrl: './company.component.css'
 })

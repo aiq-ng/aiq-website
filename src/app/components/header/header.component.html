@@ -86,8 +86,8 @@
         </ul>
       </div>
       <div class="font-inter">
-        <a
-          ><button routerLink="/contact-us"
+        <a href="/contact-us"
+          ><button title="Get in touch"
             class="bg-blue-950 py-3 px-6 font-medium rounded-md text-white hover:bg-slate-300 hover:text-blue-800"
           >
             Get in Touch
@@ -117,7 +117,7 @@
         >
           <div class="w-full h-1/2 bg-[#f5f7f9] overflow-y-auto">
             <div *ngFor="let item of navItems" class="flex flex-col items-center">
-              <button
+              <button title="navigation links"
                 [routerLink]="[item.path]"
                 routerLinkActive="font-semibold text-gray-900"
                 [routerLinkActiveOptions]="{ exact: item.path === '/home' }" 
@@ -129,7 +129,7 @@
             
             <div class="font-inter flex justify-center my-5">
               <a
-                ><button (click)="route('contact-us', '')"
+                ><button (click)="route('contact-us', '')" title="Get in touch"
                   class="bg-blue-950 py-3 px-6 font-medium rounded-md text-white hover:bg-slate-300 hover:text-blue-800"
                 >
                   Get in Touch

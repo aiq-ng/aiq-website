@@ -6,20 +6,14 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  styleUrl: './hero.component.css',
 })
 export class HeroComponent {
+  constructor(private router: Router) {}
 
-  constructor(private router: Router){}
-
-  route(page:string){
-    console.log('button clicked')
-    this.router.navigateByUrl(page)
+  route(page: string) {
+    this.router.navigateByUrl(page);
   }
 
-  click(){
-    console.log('click')
-  }
-
-
+  click() {}
 }
